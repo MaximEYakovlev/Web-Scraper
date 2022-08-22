@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 8001;
 
 const app = express();
 
-const url = "https://www.theguardian.com/uk";
+const url = process.env.URL;
 
 axios(url)
   .then((response) => {
